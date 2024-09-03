@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background_23-2148429738.jpg?t=st=1725357309~exp=1725360909~hmac=b1dea68710196432cbc30105cb30375afb190611b49d8eb7885159fce6982e70&w=740);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  row-gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inputArea,
+.showResult {
+  /* Blurred Background with Transparency */
+  background-color: rgba(255, 255, 255, 0.048);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.inputArea:hover {
+  border: 2px solid #3498db;
+}
+.showResult:hover {
+  border: 2px solid #ff00ff;
+}
+
+.inputArea {
+  animation: fadeIn 1s ease-in-out;
+  padding: 1rem;
+}
+
+.showResult {
+  animation: fadeIn 1s ease-in-out;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#birth {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.2rem;
+  color: white;
+  transition: border 0.3s ease;
+  border-radius: 10px;
+}
+
+#birth:hover {
+  border: 2px solid #3498db;
+}
